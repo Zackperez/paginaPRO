@@ -1,18 +1,15 @@
 // VALIDAR INICIO DE SESIÓN
 
-const correo = document.getElementById('email2').value;
-const contra = document.getElementById('contrasena2').value;
-const errorCorreo = document.getElementById('errorEmail');
-const errorContra = document.getElementById('errorPass');
+document.getElementById('botton').onclick = function(){
+	var correo = document.getElementById('email2').value;
+	var contra = document.getElementById('contrasena2').value;
+	var errorCorreo = document.getElementById('errorEmail');
+	var errorContra = document.getElementById('errorPass');
 
-// Funcion que verifica campos vacios de EMAIL y CONTRASEÑA
-
-document.getElementById("botton").onclick = function hola() { 
-	if (correo == "") {
-		errorCorreo.innerHTML = '<h5 class = "CorreoCSS"> Correo vacio puto </h5>'
-		//inner.HTML agrega HTML desde el JAVASCRIPT
+	if  (correo.length == 0 ) {
+		errorCorreo.innerHTML = '<h5 class = "CorreoCSS"> Campo vacio idiota</h5>';
 	}
-	if(contra == ""){
-		errorPass.innerHTML = '<h5 class = "ContraCSS"> ¿Y la contraseña? care mondá</h5>'
+	if (contra.length < 6 || contra.length == 0){
+		errorContra.innerHTML = '<h5 class = "ContraCSS"> Y la contraseña? care mondá </h5>';
 	}
 }
