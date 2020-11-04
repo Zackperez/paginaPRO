@@ -13,6 +13,7 @@
 
 	<!-- Scripts propios -->
 	<script type="text/javascript" src="js/valid-sesion.js" async></script>
+	<!--<script type="text/javascript" src="js/register.js" async></script>-->
 
 	<title>Document</title>
 </head>
@@ -43,10 +44,11 @@
 		            <div class="modal-body">
 		            	<h1 class="modal-h1">Registrate</h1>
 		            	<p class="modal-p">Una vez registrado, espera la activación de tu cuenta.</p>
-		            	<input id="nombre" placeholder="Ingresa tu nombre" class="form-control">
-		            	<input id="apellido" placeholder="Ingresa tu apellido" class="form-control">
-		            	<input id="email" placeholder="Ingresa un email" class="form-control"> 
-		            	<input type="password" id="contrasena" placeholder="Contraseña" class="form-control">
+		            	<input id="nombre-modal" placeholder="Ingresa tu nombre" class="form-control">
+		            	<input id="apellido-modal" placeholder="Ingresa tu apellido" class="form-control">
+		            	<input id="email-modal" placeholder="Ingresa un email" class="form-control"> 
+		            	<input type="password" id="contrasena-modal" placeholder="Contraseña" class="form-control">
+		            	<input type="password" id="contra-confirm-modal" placeholder="Confirmar Contraseña" class="form-control">
 		            	<div id="mensajeVerificacion">
 		            		
 		            	</div>
@@ -55,7 +57,7 @@
 		              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 
 		              <!--Boton con función de registrar al usuario -->
-		              <button onclick="registrar()" class="btn btn-primary">Registrarse</button>
+		              <button class="btn btn-primary" id="button-modal">Registrarse</button>
 		            </div>
 		          </div>
 		        </div>
@@ -72,24 +74,16 @@
 				<div class="col-md-6">
 					<h1 class="principal-h1">Inicia Sesión</h1>
 
-					<input type="email" id="email2" placeholder="correo electrónico" class="form-control" > 
-					<div id="errorEmail">
+					<input type="email" name = "dataCorreo" id="email2" placeholder="correo electrónico" class="form-control" > 
+					<div id="errorEmail"> </div>
 
-					</div>
+					<input type="password" name = "dataContra" id="contrasena2" placeholder="contraseña" class="form-control">
+					<div id="errorPass"> </div>
 
-					<input type="password" id="contrasena2" placeholder="contraseña" class="form-control">
-					<div id="errorPass">
-						
-					</div>
-					
-
-					<div id="contenido">
-						
-					</div>
 					<!--PROBLEMAS EN MODO RESPONSIVE-->
 					<p class="principal-p">¿No tienes una cuenta aún? <a href="#" data-toggle="modal" data-target="#registerModal"><span class="principal-span">Registrate haciendo click aquí</span></a></p>
 					<!--Boton con función de ingresar al usuario -->
-					<button id="botton" class="btn btn-light">Iniciar Sesión</button>
+					<button  id="botton" class="btn btn-light">Iniciar Sesión</button>
 				</div>
 			</div>
 		</div>
@@ -105,3 +99,5 @@
 	
 </body>
 </html>
+
+
