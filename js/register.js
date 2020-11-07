@@ -1,55 +1,26 @@
-(function(){
-	var formulario = document.getElementsByName('formulario')[0], elementos = formulario.elements, boton= document.getElementById('btn');
+document.getElementById('button-Modal').onclick = function(){
+	let nombreModal = document.getElementById('nombre-modal').value;
+	let apellidoModal = document.getElementById('apellido-modal').value;
+	let correoModal = document.getElementById('email-modal').value;
+	let contraModal = document.getElementById('contrasena-modal').value;
+	let confirmContraModal = document.getElementById('contra-confirm-modal').value;
+	var errorVerificacion = document.getElementById('mensajeVerificacion');
 
-	var validarNombre = function (e){
-		if (formulario.nombre.value === ''){
-			alert("Digite un nombre");
-			e.preventDefault();
-		}
-	};
+	let textos  = [nombreModal, apellidoModal, correoModal, contraModal, confirmContraModal];
 
-	var validarApellido = function (e){
-		if (formulario.apellido.value === ''){
-			alert("Digite un apellido");
-			e.preventDefault();
-		}
-	};
-
-	var validarNickName = function (e){
-		if (formulario.nickname.value === ''){
-			alert("Digite tu nickname");
-			e.preventDefault();
-		}
-	};
-
-	var validarPassword = function (e){
-		if (formulario.password.value === '' || formulario.password2.value === ''){
-			alert("Faltan campos por llenar en contraseñas");
-			e.preventDefault();
-		}
-		else if ( formulario.password.value != formulario.password2.value){
-			alert("Las contraseñas no coinciden")
-				e.preventDefault();
+	for (var valor of textos) {
+		if  (valor.length == 0) {
+			errorVerificacion.innerHTML = '<h5 class = "mensajeCSS"> Faltan campos por completar</h5>';
+			tiempoEspera(errorVerificacion);
 			}
-		
-	};
-
-	var validarEmail = function (e){
-		if (formulario.email.value === ''){
-			alert("Correo electronico necesario");
-			e.preventDefault();
 		}
-	};
+	}
+
+var error;
+
+function tiempoEspera(error){
+	setTimeout(function(){error.innerHTML = '<h5></h5>';},4000);
+}
 
 
-	var validar = function(e){
-		validarNombre(e);
-		validarApellido(e);
-		validarPassword(e);
-		validarEmail(e);
-	};
 
-	formulario.addEventListener("submit",validar);
-
-
-}())
