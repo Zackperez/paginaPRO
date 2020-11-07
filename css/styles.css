@@ -1,7 +1,6 @@
 *{
 	margin: 0;
 	padding: 0;
-	color:white;
 	font-family: 'Cabin', sans-serif;
 }
 body,html{
@@ -39,7 +38,7 @@ h1{
 }
 /* SECCION PRINCIPAL */ 
 
-.modal-h2{
+.modal-h1{
 	color:black;
 	text-align: center;
 }
@@ -50,17 +49,14 @@ h1{
 	font-size: 20px;
 }
 
+.mensajeCSS{
+	color:black;
+	font-size: 50px;
+}
+
 #principal{
 	height: 100%;
 	background-color: #16161D;
-}
-
-.mensajeCSS{
-	color:red;
-	font-size: 18px;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: bold;
 }
 
 .principal-imagen{

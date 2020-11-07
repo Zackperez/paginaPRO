@@ -22,7 +22,7 @@
 	<!--Menu - navbar -->
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light">
-		  <a class="navbar-brand" href="#">ZackPerez</a>
+		  <a class="navbar-brand" >ZackPerez</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
@@ -41,23 +41,21 @@
 		                <span aria-hidden="true">×</span>
 		              </button>
 		            </div>
-		            <div class="modal-body">
-		            	<h1 class="modal-h1">Registrate</h1>
+		            <div class="modal-body"> <!-- INICIO DEL MODAL -->
+		            	<h2 class="modal-h2">Registrate</h2>
 		            	<p class="modal-p">Una vez registrado, espera la activación de tu cuenta.</p>
 		            	<input id="nombre-modal" placeholder="Ingresa tu nombre" class="form-control">
 		            	<input id="apellido-modal" placeholder="Ingresa tu apellido" class="form-control">
 		            	<input id="email-modal" placeholder="Ingresa un email" class="form-control"> 
 		            	<input type="password" id="contrasena-modal" placeholder="Contraseña" class="form-control">
 		            	<input type="password" id="contra-confirm-modal" placeholder="Confirmar Contraseña" class="form-control">
-		            	<div id="mensajeVerificacion">
-		            		
-		            	</div>
+		            	<div id="mensajeVerificacion"> </div>
 		            </div>
 		            <div class="modal-footer">
-		              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		              <button type="button-Modal" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 
 		              <!--Boton con función de registrar al usuario -->
-		              <button class="btn btn-primary" id="button-modal">Registrarse</button>
+		              <button class="btn btn-primary" id="button-Modal">Registrarse</button> <!-- INICIO DEL MODAL -->
 		            </div>
 		          </div>
 		        </div>
@@ -74,10 +72,10 @@
 				<div class="col-md-6">
 					<h1 class="principal-h1">Inicia Sesión</h1>
 
-					<input type="email" name = "dataCorreo" id="email2" placeholder="correo electrónico" class="form-control" > 
+					<input type="email" id="email2" placeholder="correo electrónico" class="form-control" > 
 					<div id="errorEmail"> </div>
 
-					<input type="password" name = "dataContra" id="contrasena2" placeholder="contraseña" class="form-control">
+					<input type="password" id="contrasena2" placeholder="contraseña" class="form-control">
 					<div id="errorPass"> </div>
 
 					<!--PROBLEMAS EN MODO RESPONSIVE-->
