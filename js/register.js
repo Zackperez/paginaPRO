@@ -8,8 +8,6 @@
 
 	var textos2 = [nombreModal, apellidoModal, correoModal, contraModal, confirmContraModal]; //Toma el campo HTML
 
-	console.log(nombreModal.className);
-
 
 document.getElementById('button-Modal').onclick = function(){
 	var errorVerificacion = document.getElementById('mensajeVerificacion');
@@ -35,7 +33,7 @@ document.getElementById('button-Modal').onclick = function(){
 		apellidoModal.className = "form-control";
 		correoModal.className = "form-control";
 		contraModal.className = "form-control";
-		confirmContraModal.className = "form-control";
+		confirmContraModal.className = "form-control"; 
 	},3000);
 
 	}
@@ -46,11 +44,3 @@ timer = function tiempoEspera(error){
 	setTimeout(function(){error.innerHTML = '<h5></h5>';},3000);
 	//			Agrega el HTML creado desde javascript || milisegundos 3000(3segundos)
 }
-
-function restaurarInput(textos2){
-	
-	for (var i = 0; i<textos2; i++){
-		textos2[i].className = "form-control";
-	}
-}
-
