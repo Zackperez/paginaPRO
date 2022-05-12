@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="estilos/estilos-documentacion.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="Pagina">
+
+        <header class="menu-1">
+            <nav class="menu-principal">
+                
+                <ul class="menu-principal__contenido">
+                  <!--<li class="menu-principal__item"><a href="">Documentacion</a></li> -->   
+                    <li class="menu-principal__item"><a href="index.html">Inicio</a></li>
+                    <li class="menu-principal__item"><a href="">Documentacion</a></li>
+                    <li class="menu-principal__item"><a href="">Servicios</a></li>
+                    <li class="menu-principal__item"><a href="">Acerca de mi</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+
+        <aside class="menu-2">
+
+            <nav class="menu-secundario">
+
+                <ul class="menu-secundario__contenido">
+                    <li class="menu-secundario__item"><a href="#Redes">Redes</a></li>
+                    <li class="menu-secundario__item"><a href="#WindowsServer">Windows Server</a></li>
+                    <li class="menu-secundario__item"><a href=""></a></li>
+                    <li class="menu-secundario__item"><a href=""></a></li>
+                    <li class="menu-secundario__item"><a href=""></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="info">
+            <div class="info__cuerpo">
+
+                <div class="info__contenido">
+
+                    <article class="info__articulo" id="Redes">
+                        <h1 class="info__titulo">Redes</h1>
+                        <hr><br>
+                        <h2 class="info__sub-titulo"></i>¿Qué es un puerto de red?</h2>
+                        <!--<i class="fa-solid fa-align-justify">-->
+                        <p class="info__parrafo">Un puerto de red es una interfaz usada por cada protocolo para
+                            intercambiar información
+                            dentro y fuera de la Red. Su finalidad es permitir que varios programas puedan enviar y
+                            recibir información a través de la red en simultánea. La combinación de IP + Puerto
+                            corresponde a una dirección única denominada socket. <br>
+                            Existen 65.536 puertos, ya que están codificados en 16 Bits. Debido a la cantidad, la IANA
+                            (Internet Assigned Numbers Authority) estableció un estándar para el uso de dichos puertos.
+                            Dicha entidad los clasifica de la siguiente manera:
+                            <br>
+                        <ul class="info-ul__contenido">
+                            <li class="info-ul__item">Puertos bien conocidos, del puerto 0 al puerto
+                                1.023,corresponden a puertos reservados para los procesos del sistema operativo.</li>
+                            <li class="info-ul__item">Puertos registrados, del puerto 1.024 al puerto 49.151,
+                                corresponden a los que puedenser usados por cualquier aplicación, según las definiciones
+                                del estándar (y que pueden ser modificados por el administrador del sistema según su
+                                necesidad).</li>
+                            <li class="info-ul__item">Puertos dinámicos o privados, del puerto 49.152 al
+                                puerto65.535, son los puertos que se asignan dinámicamente a clientes al momento de
+                                estableceruna conexión cliente –servidor.</li>
+                        </ul>
+                        </p>
+
+                        <p class="info_parrafo">Algunos de los puertos más conocidos son:</p>
+                        <ul class="info-ul__contenido">
+                            <li class="info-ul__item">Puerto 21 (ftp), Puerto del Protocolo de transferencia de archivos
+                                (FTP)</li>
+                            <li class="info-ul__item">Puerto 22 (ssh), Servicio de shell seguro (SSH)</li>
+                            <li class="info-ul__item">Puerto 23 (telnet), El servicio Telnet</li>
+                            <li class="info-ul__item">Puerto 25 (smtp), Protocolo simple de transferencia de correo
+                                (SMTP)</li>
+                            <li class="info-ul__item">Puerto 80 (http), Protocolo de transferencia de hipertexto (HTTP)
+                                para los servicios del World Wide Web (WWW)</li>
+                            <li class="info-ul__item">Puerto 110 (pop3), Protocolo Post Office versión 3</li>
+                            <li class="info-ul__item">Puerto 1433 (ms-sql-s), Microsoft SQL Server</li>
+                            <li class="info-ul__item">Puerto 3306 (mysql), Servicio de base de datos MySQL</li>
+                            <li class="info-ul__item">Puerto 5432 (postgres), Base de datos PostgreSQL</li>
+                            <li class="info-ul__item">Puerto 8080 (webcache), Servicio de caché del World Wide Web (WWW)
+                            </li>
+                        </ul>
+                        <br>
+                        <h2 class="info__sub-titulo">Puerto 80</h2>
+                        
+                        <p class="info__parrafo">En el ámbito de la informática, se conoce como Puerto 80 al que puerto
+                            por default, por el
+                            medio del cual un servidor HTTP “escucha” la petición hecha por un cliente, es decir por una
+                            PC en específico.
+                            De acuerdo a los expertos, todas aquellas aplicaciones que funcionan en base a la IP (bien
+                            si son TCP o UDP) establecen comunicación con un servidor específico (puede ser SMTP, FTP,
+                            TELNET o HTTP, etc.) a través de un puerto, en el caso del HTTP, ese puerto es el 80. Así
+                            que mientras la PC de cada uno ocupa un puerto aleatorio, al momento de originar una
+                            petición al servidos, en el caso del HTTP siempre será, indistintamente el puerto 80, el que
+                            escuche o reciba la solicitud de servicio hecha por la PC cliente.</p>
+                            <br>
+                    </article>
+
+                    <article class="info__articulo" id="WindowsServer">
+                        <h1 class="info__titulo">Windows Server</h1>
+                        <hr><br>
+                        <h2 class="info__sub-titulo">¿Qué es un Servidor de archivos?</h2>
+                        <p class="info__parrafo">Proporciona a los usuarios una determinada ubicación en la red, en la
+                            cual pueden tanto crear como almacenar y compartir archivos con otros usuarios que compartan
+                            la misma red.
+
+                            El principal objetivo de los servidores de archivos no es otro que servir como
+                            almacenamiento de archivos de datos, de modo que el espacio de almacenamiento que deben
+                            ofrecer es muy amplio.
+                            Así, cuando la máquina se ha configurado del modo apropiado y ha sido publicada en la red,
+                            los usuarios pueden empezar a hacer uso del espacio de almacenamiento que haya disponible en
+                            el servidor de archivos en cuestión. Lo hacen a través de la asignación en el interior de
+                            las unidades de sus propios equipos.
+
+                            De este modo, cuando se asigna como una unidad, el software puede leerlo y gestionarlo como
+                            una unidad adicional. Si la configuración del servidor de archivos se ha realizado
+                            correctamente, los usuarios tiene plena libertad para crear, modificar y ejecutar los
+                            archivos que deseen de manera directa desde el servidor.</p>
+                            <br>
+                            <h2 class="info__subtitulo">Implementar servidor de archivos en windows server:</h2>
+                            <p class="info__parrafo">
+                                Para tener un servidor de archivosen windows server, es necesario implementar BranchCache:
+                                <br>
+                                <strong>BranchCache</strong> es una tecnología de optimización de ancho de banda de red de área extensa (WAN) que se incluye en algunas ediciones de los sistemas operativos Windows Server 2016 y Windows 10, así como en algunas ediciones de Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2 y Windows 7. Para mejorar el ancho de banda de la WAN cuando los usuarios acceden a contenido de servidores remotos, BranchCache obtiene el contenido de los servidores de contenido de la oficina central o de la nube hospedada y lo almacena en la memoria caché de las sucursales, lo que permite que los equipos cliente de dichas sucursales accedan al contenido de forma local, y no a través de la WAN.
+                                <br><br>
+                                En las sucursales, el contenido se almacena en servidores configurados para hospedar la memoria caché o, cuando no hay ningún servidor disponible en la sucursal, en equipos cliente que ejecutan Windows 10, Windows 8.1, Windows 8 o Windows 7. Cuando un equipo cliente haya solicitado y recibido un determinado contenido de la oficina central y este se haya almacenado en caché en la sucursal, el resto de equipos de la sucursal podrá disponer de este contenido de forma local y sin necesidad de descargarlo del servidor de contenido a través de un vínculo WAN.
+                                <br><br>    
+                                BranchCache aumenta la productividad del usuario final al mejorar tanto el tiempo de respuesta de las consultas de contenido en los clientes y servidores de las sucursales como el rendimiento de la red, ya que reduce el tráfico en los vínculos WAN.
+                            </p>
+                            <br>
+                            <h2 class="info__subtitulo">Requisitos para implementar un servidor de archivos:</h2>
+                            <ul class="info-ul__contenido">
+                                <li class="info-ul__item">Los servidores de contenido web y de archivos deben ejecutar uno de los siguientes sistemas operativos para proporcionar funcionalidad de BranchCache: Windows Server 2016, Windows Server 2012 R2 , Windows Server 2012 o Windows Server 2008 R2 . Windows 8 y versiones posteriores siguen teniendo las ventajas de BranchCache al acceder a servidores de contenido que ejecutan Windows Server 2008 R2, pero no pueden usar las nuevas tecnologías de fragmentación y hash en Windows Server 2016, Windows Server 2012 R2 y Windows Server 2012.</li>
+                                <li class="info-ul__item">Los equipos cliente deben ejecutar Windows 10, Windows 8.1 o Windows 8 para usar el modelo de implementación más reciente y las mejoras de fragmentación y hash que se introdujeron con Windows Server 2012 .</li>
+                                <li class="info-ul__item">Los servidores de caché hospedada deben ejecutar Windows Server 2016, Windows Server 2012 R2 o Windows Server 2012 para usar las mejoras de implementación y las características de escalado descritas en este documento. Un equipo que ejecuta uno de estos sistemas operativos configurado como servidor de caché hospedada puede seguir atienden equipos cliente que ejecutan Windows 7, pero para ello, debe estar equipado con un certificado que sea adecuado para seguridad de la capa de transporte (TLS), como se describe en la guía de implementación de Windows Server 2008 R2 y Windows 7 BranchCache.</li>
+                                <li class="info-ul__item">Se Active Directory dominio para aprovechar las ventajas de la detección automática directiva de grupo caché hospedada y de almacenamiento en caché, pero no es necesario un dominio para usar BranchCache. Puede configurar equipos individuales mediante Windows PowerShell. Además, no es necesario que los controladores de dominio ejecuten Windows Server 2012 o posterior para usar la nueva configuración de BranchCache directiva de grupo; puede importar las plantillas administrativas de BranchCache en controladores de dominio que ejecutan sistemas operativos anteriores o puede crear los objetos de directiva de grupo de forma remota en otros equipos que ejecutan Windows 10. Windows Server 2016, Windows 8.1, Windows Server 2012 R2, Windows 8 o Windows Server 2012.</li>
+                                <li class="info-ul__item">Active Directory se usan para limitar el ámbito de los servidores de caché hospedada que se detectan automáticamente. Para detectar automáticamente un servidor de caché hospedada, los equipos cliente y servidor deben pertenecer al mismo sitio. BranchCache está diseñado para tener un impacto mínimo en clientes y servidores y no impone requisitos de hardware adicionales más allá de los necesarios para ejecutar sus respectivos sistemas operativos.</li>
+                            </ul>
+                            <br>
+
+                            <h2 class="info__subtitulo">Instalación de BranchCache</h2>
+                            <p class="info__parrafo">
+                                Para implementar servidores de contenido que son servidores web del Protocolo de transferencia de hipertexto seguro (HTTPS), servidores web del Protocolo de transferencia de hipertexto (HTTP) y servidores de aplicaciones basados en el servicio de transferencia inteligente en segundo plano (BITS), como Windows Server Update Services (WSUS) y Microsoft Endpoint Configuration Manager servidores de sistema de sitio de distribución de ramas, debe instalar la característica BranchCache, iniciar el servicio BranchCache y (solo para servidores WSUS) realizar pasos de configuración adicionales.
+                            </p>
+                            <!--ul.info-ul__contenido>li.info-ul__item*5-->
+                            <ol class="info-ol__contenido">
+                                <li class="info-ul__item">En el Administrador del servidor, haga clic en Administrar y en Agregar roles y características. Se abre el asistente para Agregar roles y características. Haga clic en Next.</li>
+                                <li class="info-ul__item">En Seleccionar tipo de instalación, asegúrese de que está seleccionada la instalación basada en características o en roles y, a continuación, haga clic en Siguiente.</li>
+                                <li class="info-ul__item">En Seleccionar servidor de destino, asegúrese de que está seleccionado el servidor correcto y, a continuación, haga clic en Siguiente.</li>
+                                <li class="info-ul__item">En Seleccionar características, haga clic en BranchCachey, a continuación, haga clic en Siguiente.</li>
+                                <li class="info-ul__item">En Confirmar selecciones de instalación, haga clic en Instalar. En Progreso de la instalación, continúa la instalación de la característica BranchCache. Una vez completada la instalación, haga clic en Cerrar.</li>
+                            </ol>
+                            <br>
+                            <h2 class="info__subtitulo">Instalar un nuevo servidor de archivos como servidor de contenido</h2>
+
+                            <p class="info__parrafo">
+                            Para implementar servidores de contenido que ejecutan el rol de servidor Servicios de archivo, debe instalar el servicio de rol BranchCache para archivos de red del rol de servidor Servicios de archivo. Además, debe habilitar BranchCache en recursos compartidos de archivos según sus requisitos.
+
+                            Durante la configuración del servidor de contenido, puede permitir la publicación de contenido de BranchCache para todos los recursos compartidos de archivos, o puede seleccionar un subconjunto de los recursos compartidos de archivos para su publicación.
+                            </p>
+                            <ol class="info-ul__contenido">
+                                <li class="info-ul__item">Instalar un nuevo servidor de archivos como servidor de contenido</li>
+                                <li class="info-ul__item">En Seleccionar tipo de instalación, asegúrese de que la instalación basada en características o en roles está seleccionada y, a continuación, haga clic en Siguiente.</li>
+                                <li class="info-ul__item">En Seleccionar servidor de destino, asegúrese de que está seleccionado el servidor correcto y, a continuación, haga clic en Siguiente.</li>
+                                <li class="info-ul__item">En Seleccionar roles de servidor, en Roles, tenga en cuenta que el rol Servicios de archivos y Storage ya está instalado; haga clic en la flecha situada a la izquierda del nombre del rol para expandir la selección de servicios de rol y, a continuación, haga clic en la flecha situada a la izquierda de Servicios de archivo e iSCSI.</li>
+                                <li class="info-ul__item">Active las casillas Servidor de archivos yBranchCache para Archivos de red. SugerenciaTambién se recomienda activar la casilla Desduplicación de datos.Haga clic en Next.</li>
+                                <li class="info-ul__item">En Seleccionar características, haga clic en Siguiente.</li>
+                                <li class="info-ul__item">En Confirmar selecciones de instalación, revise las selecciones y, a continuación, haga clic en Instalar. El panel Progreso de la instalación se muestra durante la instalación. Una vez completada la instalación, haga clic en Cerrar.</li>
+                            </ol>
+                                
+                    </article>
+
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/1a5bcd4a97.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
